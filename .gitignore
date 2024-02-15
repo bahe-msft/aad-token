@@ -1,5 +1,5 @@
 *.pcap
-*kubeconfig
+*kubeconfig*
 logs.txt
 .DS_Store
 ssl-keys.txt
