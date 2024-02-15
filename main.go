@@ -35,6 +35,7 @@ func initClient() {
 	transport.TLSClientConfig.MinVersion = tls.VersionTLS12 // maybe this is broken too ?
 	// force to use http2...
 	transport.TLSClientConfig.NextProtos = []string{"h2"}
+	transport.TLSClientConfig.KeyLogWriter = os.Stdout
 
 	client = &http.Client{
 		Transport: transport,
