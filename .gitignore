@@ -1,0 +1,4 @@
+*.pcap
+*kubeconfig
+logs.txt
+.DS_STore
